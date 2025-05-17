@@ -1,6 +1,11 @@
-// src/main.tsx
-
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./components/App";
+import "modern-normalize";
+import App from "./components/App/App";
+import "./global.css";
 
-createRoot(document.getElementById("root") as HTMLElement).render(<App />);
+createRoot(document.getElementById("root") as HTMLDivElement).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
